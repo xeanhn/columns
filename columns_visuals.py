@@ -23,7 +23,7 @@ class Game:
                        "X": (0, 255, 255),
                        "Y": (0, 4, 255),
                        "Z": (157, 0, 255)}
-        pygame.time.set_timer(30, 500)
+
 
     def run(self) -> None:
         """
@@ -31,6 +31,7 @@ class Game:
         is frozen and matched jewels are checked and cleared.
         """
         pygame.init()
+        pygame.time.set_timer(30, 500)
         self._resize_surface(self.game_window)
         clock = pygame.time.Clock()
 
